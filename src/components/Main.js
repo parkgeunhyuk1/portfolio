@@ -5,6 +5,7 @@ import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
+import Intro from "./Intro";
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -45,7 +46,7 @@ const Blog = styled(NavLink)`
   z-index: 1;
 `;
 const Work = styled(NavLink)`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
   top: 50%;
   left: calc(1rem+2vw);
@@ -128,8 +129,8 @@ const Main = () => {
         <DarkDiv click={click}/>
       <Container>
         <PowerButton />
-        <LogoComponent />
-        <SocialIcons />
+        <LogoComponent theme={click ? 'dark' : 'light'}/>
+        <SocialIcons theme={click ? 'dark' : 'light'}/>
         <Center click={click}>
           <YinYang
             onClick={() => handleClick()}
@@ -148,18 +149,19 @@ const Main = () => {
         <Blog to="/blog">
           <h2>Blog</h2>
         </Blog>
-        <Work to="/work">
+        <Work to="/work" click={click}>
           <h2>Work</h2>
         </Work>
         <BottomBar>
-          <About to="/about">
+          <About to="/about" click={click}>
             <h2>About.</h2>
           </About>
-          <Skills to="/skills">
+          <Skills to="/skills" click={click}>
             <h2>My Skills.</h2>
           </Skills>
         </BottomBar>
       </Container>
+      {click ? <Intro click={click}/>: null}
     </MainContainer>
   );
 };
