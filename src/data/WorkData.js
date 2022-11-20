@@ -1,49 +1,49 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        name:"Weather app",
+        description:"This is my first project using typescript which show weather condition through user's location",
+        tags:["typescript"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"https://golden-strudel-362da8.netlify.app",
+        github:"https://github.com/parkgeunhyuk1/weather-typescript"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        name:"Movie information site",
+        description:"this is a site which show movie's information",
+        tags:["react","redux"],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
+        demo:"https://enchanting-semifreddo-b546d3.netlify.app",
+        github:"https://github.com/parkgeunhyuk1/parkflix"
         
     },
     {
         id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
+        name:"Chatting App",
+        description:"this is a site which user can commuicate each other and make communication room. I make Ui and server.",
+        tags:["Typescript","MongoDB","Node.js",'Socket.io'],
         
         demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
+        github:"https://github.com/parkgeunhyuk1/chat-typescript"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"Portfolio Web Service",
+        description:"user can use this site to upgrade their portfolio. user can upload own information, and can see other's. and can share to other people",
+        tags:["react","bootstrap","react-router"],
         
         demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        github:"https://github.com/5owl5/portfolio-frontend"
        
     },{
         id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
+        name:"Challenge for nature",
+        description:"A site that encourages people to protect the environment. We encourage users using a point system ",
+        tags:["react",'rechart',"framer-motion"],
         
         demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
+        github:"https://github.com/HaEunCho248/tt-web-service"
         
     },
     {
