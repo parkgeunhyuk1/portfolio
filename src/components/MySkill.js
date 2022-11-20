@@ -5,6 +5,7 @@ import { Design, Develope } from "./AllSvgs";
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
+import ParticleComponent from "../subComponents/ParticleComponent";
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
@@ -23,6 +24,7 @@ const Main = styled.div`
   height: 60vh;
   z-index: 3;
   line-height: 1.5;
+  cursor: pointer;
 
   font-family: "Ubuntu Mono", monospace;
   display: flex;
@@ -74,6 +76,7 @@ const MySkill = () => {
         <LogoComponent theme="light" />
         <SocialIcons theme="light" />
         <PowerButton />
+        <ParticleComponent theme='light' />
         <Main>
           <Title>
             <Design width={40} height={40} /> Designer
