@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Me from '../assets/Images/profile-img.png'
-const Box = styled.div`
+import { motion } from "framer-motion";
+import Me from "../assets/Images/profile-img.png";
+const Box = styled(motion.div)`
   position: absolute;
   left: 50%;
   top: 50%;
@@ -29,50 +30,57 @@ const Box = styled.div`
 `;
 
 const SubBox = styled.div`
-width: 50%;
-position: relative;
-display: flex;
-.pic{
+  width: 50%;
+  position: relative;
+  display: flex;
+  .pic {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%,0%);
-    width: 100%;
-    height: auto;
-}
-`
+    transform: translate(-50%, 0%);
+    margin-left: 10%;
+    width: 120%;
+    height: 60vh;
+  }
+`;
 const Text = styled.div`
-font-size: calc(1em + 1.5vw);
-color: ${props => props.theme.body};
-padding: 2rem;
-cursor: pointer;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-&>*:last-child{
-    color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
+  font-size: calc(1em + 1.5vw);
+  color: ${(props) => props.theme.body};
+  padding: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  & > *:last-child {
+    color: ${(props) => `rgba(${props.theme.bodyRgba},0.6)`};
     font-size: calc(0.5rem + 1.5vw);
-    font-weight:300;
-}
-`
-
+    font-weight: 300;
+  }
+`;
 
 const Intro = () => {
   return (
-    <Box>
+    <Box
+      initial={{ height: 0 }}
+      animate={{ height: "50vh" }}
+      transition={{ type: "spring", duration: 2, delay: 1 }}
+    >
       <SubBox>
         <Text>
-            <h1>Hi,</h1>
-            <h3>I'm GeunHyuk</h3>
-            <h6>Thank you for visiting my portfolio website</h6>
+          <h1>Hi,</h1>
+          <h3>I'm GeunHyuk.</h3>
+          <h6>Thank you for visiting my portfolio website.</h6>
         </Text>
-        </SubBox>
-        <SubBox>
-        <div>
-            <img className="pic" src={Me} alt='picture'/>
-        </div>
-        </SubBox>
-      
+      </SubBox>
+      <SubBox>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
+        >
+          <img className="pic" src={Me} alt="picture" />
+        </motion.div>
+      </SubBox>
     </Box>
   );
 };
