@@ -34,7 +34,9 @@ const PowerButton = () => {
     const navigate=useNavigate();
   return (
     <Power>
-      <PowerBtn width={30} height={30} fill='currentColor'/>
+      <PowerBtn onClick={()=>{
+        navigate('/')
+      }} width={30} height={30} fill='currentColor'/>
     </Power>
   )
 }
