@@ -12,6 +12,10 @@ const Icons = styled.div`
   left: 2rem;
 
   z-index: 3;
+
+  & > *:not(:last-child) {
+    margin: 0.5rem 0;
+  }
 `;
 const Line = styled.span`
   width: 2px;
@@ -23,16 +27,24 @@ const SocialIcons = () => {
   return (
     <Icons>
       <div>
-        <Github width={25} height={25} fill="currentColor" />
+        <a href="https://github.com/parkgeunhyuk1" style={{ color: "inherit" }} target="_blank" >
+          <Github width={25} height={25} fill="currentColor" />
+        </a>
       </div>
       <div>
-        <Twitter width={25} height={25} fill="currentColor" />
+        <NavLink to="/" style={{ color: "inherit" }} target="_blank">
+          <Twitter width={25} height={25} fill="currentColor" />
+        </NavLink>
       </div>
       <div>
-        <Facebook width={25} height={25} fill="currentColor" />
+        <NavLink to="/" style={{ color: "inherit" }} target="_blank">
+          <Facebook width={25} height={25} fill="currentColor" />
+        </NavLink>
       </div>
       <div>
-        <YouTube width={25} height={25} fill="currentColor" />
+        <NavLink to="/" style={{ color: "inherit" }} target="_blank">
+          <YouTube width={25} height={25} fill="currentColor" />
+        </NavLink>
       </div>
       <Line />
     </Icons>
