@@ -71,11 +71,13 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm a front-end developer located in Korea. I love to create simple yet beautiful websites with great user experience.
+        I'm a front-end developer located in Korea. I love to create simple and beautiful websites with great user experience.
 <br /> <br/>
 I'm interested in the whole frontend stack Like trying new things and building great projects. And recently, there has been a lot of interest in real-time implementation using socket.io.
 <br/> <br/>
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+ You can connect with me via social links or
+ <br/>
+ Contact: 010 6543 7918
         </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />
