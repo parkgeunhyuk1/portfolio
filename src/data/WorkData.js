@@ -24,7 +24,7 @@ export const Work = [
         description:"this is a site which user can commuicate each other and make communication room. I make Ui and server.",
         tags:["Typescript","MongoDB","Node.js",'Socket.io'],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
+        demo:"/",
         github:"https://github.com/parkgeunhyuk1/chat-typescript"
     },
     {
@@ -33,7 +33,7 @@ export const Work = [
         description:"user can use this site to upgrade their portfolio. user can upload own information, and can see other's. and can share to other people",
         tags:["react","bootstrap","react-router"],
         
-        demo:"https://react-sidebar.vercel.app/",
+        demo:"/",
         github:"https://github.com/5owl5/portfolio-frontend"
        
     },{
@@ -42,7 +42,7 @@ export const Work = [
         description:"A site that encourages people to protect the environment. We encourage users using a point system ",
         tags:["react",'rechart',"framer-motion"],
         
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
+        demo:"/",
         github:"https://github.com/HaEunCho248/tt-web-service"
         
     },
@@ -52,7 +52,7 @@ export const Work = [
         description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
         tags:["react","react-router","css"],
         
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
+        demo:"/",
         github:"https://github.com/codebucks27/React-responsive-navbar"
         
     },

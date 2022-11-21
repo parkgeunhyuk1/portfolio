@@ -90,7 +90,6 @@ const MySkill = () => {
             <strong>I like to desing</strong>
             <ul>
               <li>Web Design</li>
-              <li>Mobile Design</li>
             </ul>
           </Description>
           <Description>

@@ -33,19 +33,19 @@ const SocialIcons = (props) => {
         </a>
       </div>
       <div>
-        <NavLink to="/" style={{ color: "inherit" }} target="_blank">
-          <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}  />
+        <NavLink  to="/" style={{ color: "inherit" }} target="_blank">
+          <Twitter  width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}  />
         </NavLink>
       </div>
       <div>
-        <NavLink to="/" style={{ color: "inherit" }} target="_blank">
+        <NavLink  to="/" style={{ color: "inherit" }} target="_blank">
           <Facebook width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}  />
         </NavLink>
       </div>
       <div>
-        <NavLink to="/" style={{ color: "inherit" }} target="_blank">
+        <a href="https://www.youtube.com/watch?v=Dt7841js0XM&t=2s" style={{ color: "inherit" }} target="_blank">
           <YouTube width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
-        </NavLink>
+        </a>
       </div>
       <Line color={props.theme}/>
     </Icons>
