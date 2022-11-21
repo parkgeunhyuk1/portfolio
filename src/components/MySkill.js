@@ -6,6 +6,7 @@ import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 import ParticleComponent from "../subComponents/ParticleComponent";
+import BigTitlte from "../subComponents/BigTitle";
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
@@ -117,6 +118,7 @@ const MySkill = () => {
             </ul>
           </Description>
         </Main>
+        <BigTitlte text='SKILLS' top='80%' right='30%'/>
       </Box>
     </ThemeProvider>
   );
