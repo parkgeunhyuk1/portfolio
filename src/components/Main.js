@@ -28,7 +28,7 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
-const Contact = styled(NavLink)`
+const Contact = styled.a`
   color: ${(props) => props.theme.text};
   position: absolute;
   top: 2rem;
@@ -141,8 +141,8 @@ const Main = () => {
           <span>click here</span>
         </Center>
         <Contact
-          target="_blank"
-          to={{ pathname: "matilto:rmsgur95@gmail.com" }}
+          
+          href="mailto:rmsgur95@gmail.com"
         >
           <motion.h2
            whileHover={{scale: 1.1}}
